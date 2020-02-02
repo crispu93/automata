@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Load the Paper.js library -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/automata.js"></script>
+    <style type="text/css" src="css/style.css"></style>
 </head>
 <body>
-    <canvas id="myCanvas" resize></canvas>
-    <h1> Graphic Autómata 3</h1>
+    <div class="sidenav">
+        <input type="button" value="Nuevo" onclick="new_af()">
+    </div>
+    <div class="main">
+        <h1>Autómata finito</h1>
+        <canvas id="myCanvas" resize></canvas>
+    </div>
 </body>
 </html>
