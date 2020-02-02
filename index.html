@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/automata.js"></script>
+    
     <style type="text/css" src="css/style.css"></style>
 </head>
 <body>
@@ -13,22 +13,24 @@
     <div class="main">
         <h1>Autómata finito</h1>
         <canvas id="myCanvas" resize></canvas>
-        <div class="form-popup" id="myform">
-            <form class="form-container">
-                <h1>Nuevo Autómata</h1>
-                <label for="numStates"><b>Número de Estados</b></label>
-                <input type="text" placeholder="Estados" name="numStates">
-
-                <label for="language"><b>Símbolos del Lenguaje</b></label>
-                <input type="text" placeholder="Símbolos" name="language">
-
-                <label for="transFunc"><b>Función de Transición</b></label>
-                <input type="text" placeholder="Transiciones" name="transFunc">
-
-                <button type="submit" class="btn">Aceptar</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
-            </form>
-        </div>
+        
     </div>
+    <div class="form-popup" id="myform">
+        <form class="form-container">
+            <h1>Nuevo Autómata</h1>
+            <label for="numStates"><b>Número de Estados</b></label>
+            <input type="text" placeholder="Estados" name="numStates">
+
+            <label for="language"><b>Símbolos del Lenguaje</b></label>
+            <input type="text" placeholder="Símbolos" name="language">
+
+            <label for="transFunc"><b>Función de Transición</b></label>
+            <input type="text" placeholder="Transiciones" name="transFunc">
+
+            <button type="submit" class="btn">Aceptar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/automata.js"></script>
 </body>
 </html>
