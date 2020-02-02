@@ -1,4 +1,4 @@
-class Automata() {
+class Automata {
     constructor(numStates, language, initState, transFunc, acceptStates){
         this.numStates = numStates;
         this.language = language;
