@@ -26,9 +26,9 @@ body {
 }
 
 .main {
-    margin-left: 290px; /* Same width as the sidebar + left position in px */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+    margin-left: 300px; /* Same width as the sidebar + left position in px */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 5px;
 }
 
 * {box-sizing: border-box;}
