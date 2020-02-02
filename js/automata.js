@@ -11,3 +11,11 @@ class Automata {
 function new_af(){
     return;
 }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
