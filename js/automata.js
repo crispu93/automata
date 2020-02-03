@@ -44,4 +44,10 @@ class AFD {
 
 let afd = new AFD();
 
-
+// Draw a circle on the canvas
+$('canvas').drawArc({
+    fillStyle: 'black',
+    x: 100, y: 100,
+    radius: 50
+  });
+  
