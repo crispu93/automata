@@ -61,4 +61,5 @@ function drawAcceptState() {
 
 $('#states').change( function() {
     $('#log').text("El número de estados ha cambiado");
+    afd.setStates( parseInt($(this).val() ) );
 });
