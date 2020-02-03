@@ -60,5 +60,5 @@ function drawAcceptState() {
 }
 
 $('#states').change( function() {
-    alert("El número de estados ha cambiado");
+    $('#log').text() = "El número de estados ha cambiado";
 });
