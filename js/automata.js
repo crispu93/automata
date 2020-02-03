@@ -1,21 +1,47 @@
 class AFD {
-    constructor(numStates, language, initState, transFunc, acceptStates){
-        this.numStates = numStates;
-        this.language = language;
-        this.initState = initState;
-        this.transFunc = transFunc;
-        this.acceptStates = acceptStates;
+    constructor(){
+        this.num_states = null;
+        this.language_size = null;
+
+        this.states = [];
+        this.language = [];
+        this.initial_state = null;
+        this.accept_states = [];
+        this.transition = [];
+    }
+
+    setStates(num_states) {
+        for(var i=0; i<num_states; i++) {
+            this.states.push("q"+i);
+        }
+        this.num_states = num_states;
+    }
+
+    setLanguage(language) {
+        language.forEach(x => this.language.push(x));
+        this.language_size = language.length; 
+    }
+
+    setInitialState(initial_state) {
+        this.initial_state = initial_state;
+    }
+
+    setAcceptStates(accept_states) {
+        accept_states.forEach(x => this.accept_states.push(x));
+    }
+
+    // This is the way we set transition function
+    // We set it from the new state
+    // The number is determined by the user
+    setTransition()  {
+        return;
+    }
+    
+    getStates() {
+        return this.states;
     }
 }
 
-function new_af(){
-    return;
-}
+let afd = new AFD();
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-}
