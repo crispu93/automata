@@ -1,4 +1,4 @@
-class Automata {
+class AFD {
     constructor(numStates, language, initState, transFunc, acceptStates){
         this.numStates = numStates;
         this.language = language;

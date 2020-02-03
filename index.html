@@ -7,23 +7,21 @@
 <body>
     <div class="sidenav">
         <!---<input type="button" value="Nuevo" onclick="new_af()">-->
-        <button class="open-button" onclick="openForm()">Nuevo automáta</button>
-        <div class="form-popup" id="myForm">
-            <form class="form-container">
-                <h1>Nuevo Autómata</h1>
-                <label for="numStates"><b>Número de Estados</b></label>
-                <input type="text" placeholder="Estados" name="numStates">
-    
-                <label for="language"><b>Símbolos del Lenguaje</b></label>
-                <input type="text" placeholder="Símbolos" name="language">
-    
-                <label for="transFunc"><b>Función de Transición</b></label>
-                <input type="text" placeholder="Transiciones" name="transFunc">
-    
-                <button type="submit" class="btn">Aceptar</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
-            </form>
-        </div>
+        <form class="form-container">
+            <h1>Nuevo Autómata</h1>
+            <label for="numStates"><b>Número de Estados</b></label>
+            <input type="text" placeholder="Estados" name="numStates">
+
+            <label for="language"><b>Símbolos del Lenguaje</b></label>
+            <input type="text" placeholder="Símbolos" name="language">
+
+            <label for="transFunc"><b>Función de Transición</b></label>
+            <input type="text" placeholder="Transiciones" name="transFunc">
+
+            <button type="submit" class="btn">Aceptar</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+        </form>
+
     </div>
     <div class="main">
         <h1>Autómata finito</h1>
