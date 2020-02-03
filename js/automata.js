@@ -51,7 +51,7 @@ function drawState(x_pos, y_pos, r){
         strokeStyle: '#000',
         strokeWidth: 5,
         x: x_pos, y: y_pos,
-        radius: r;
+        radius: r
     });
 }
 
