@@ -42,14 +42,24 @@ class AFD {
     }
 }
 
+var $myCanvas = $('#myCanvas');
 let afd = new AFD();
 
 
+function drawState(x_pos, y_pos, r){
+    $myCanvas.drawArc({
+        strokeStyle: '#000',
+        strokeWidth: 5,
+        x: x_pos, y: y_pos,
+        radius: r;
+    });
+}
 
-// Draw a circle on the canvas
-$('#myCanvas').drawArc({
-    fillStyle: 'black',
-    x: 100, y: 100,
-    radius: 50
-});
-  
+function drawAcceptState() {
+    return;
+}
+
+function statesGiven() {
+    const num_states = document.querySelector('#states');
+    document.querySelector('#log').textContent = num_states.textContent;
+}
