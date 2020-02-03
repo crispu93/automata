@@ -59,7 +59,6 @@ function drawAcceptState() {
     return;
 }
 
-function statesGiven() {
-    const num_states = document.querySelector('#states');
-    document.querySelector('#log').textContent = num_states.textContent;
-}
+$('#states').change( function() {
+    alert("El número de estados ha cambiado");
+});
