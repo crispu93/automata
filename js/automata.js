@@ -49,7 +49,7 @@ let afd = new AFD();
 function drawState(x_pos, y_pos, r){
     $myCanvas.drawArc({
         strokeStyle: '#000',
-        strokeWidth: 4,
+        strokeWidth: 3,
         x: x_pos, y: y_pos,
         radius: r
     });
