@@ -84,7 +84,7 @@ $('#symbols').change( function() {
     // Save the symbols in an array
     let str = $(this).val();
     let res = str.split(" ");
-    console.log(typeof(res));
+    console.log(res);
     afd.setSymbols( res );
 });
 
