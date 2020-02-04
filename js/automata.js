@@ -49,7 +49,7 @@ let afd = new AFD();
 function drawState(x_pos, y_pos, r){
     $myCanvas.drawArc({
         strokeStyle: '#000',
-        strokeWidth: 5,
+        strokeWidth: 4,
         x: x_pos, y: y_pos,
         radius: r
     });
@@ -66,8 +66,8 @@ $('#states').change( function() {
 
     const w = Math.floor( document.getElementById("myCanvas").width / (num + 1) );
     console.log(w);
-    for(var i=0; i<num; i++) {
-        drawState(i*w, document.getElementById("myCanvas").width / 2, 10);
+    for(var i=1; i<=num; i++) {
+        drawState(i*w, document.getElementById("myCanvas").width / 2, 20);
     }
 });
 
