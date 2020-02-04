@@ -52,14 +52,14 @@ function drawState(x_pos, y_pos, r, i){
         strokeWidth: 3,
         x: x_pos, y: y_pos,
         radius: r
-    }).drawText({
+    });/*.drawText({
         layer: true,
         fillStyle: "#000",
         strokeStyle: "#25a",
         x: x_pos,
         y: y_pos,
         text: "q"+i
-    });
+    });*/
 }
 
 function drawAcceptState() {
