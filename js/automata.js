@@ -108,6 +108,7 @@ $('#symbols').change( function() {
     let str = $(this).val();
     let res = str.split(" ");
     afd.setSymbols( res );
+    transitionTable();
 });
 
 
