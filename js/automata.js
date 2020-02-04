@@ -62,6 +62,11 @@ function drawAcceptState() {
 $('#states').change( function() {
     $('#logStates').text("El número de estados ha cambiado");
     afd.setStates( parseInt($(this).val() ) );
-    console.log(afd.getStatesNumber());
+    const num = afd.getStatesNumber();
+
+    const w = Math.floor( $myCanvas.width / num + 1 );
+    for(var i=0; i<num; i++) {
+        drawState(i*w, $myCanvas.width / 2, 10)
+    }
 });
 
