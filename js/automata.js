@@ -30,9 +30,6 @@ class AFD {
         accept_states.forEach(x => this.accept_states.push(x));
     }
 
-    // This is the way we set transition function
-    // We set it from the new state
-    // The number is determined by the user
     setTransition()  {
         return;
     }
@@ -66,7 +63,6 @@ function drawAcceptState() {
 }
 
 $('#states').change( function() {
-    
     const canvas = document.getElementById('myCanvas');
     const context = canvas.getContext('2d');
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -81,5 +77,14 @@ $('#states').change( function() {
     for(var i=1; i<=num; i++) {
         drawState(i*w, canvas.height / 2, 30, i-1);
     }
+});
+
+$('#symlbols').change( function() {
+    $('#logSymb').text("El número de símbolos ha cambiado");
+    // Save the symbols in an array
+    let str = $(this).val();
+    let res = str.split(" ");
+    console.log(typeof(res));
+    afd.setSymbols(  );
 });
 
