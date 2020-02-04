@@ -77,7 +77,6 @@ $('#states').change( function() {
     const num = afd.getStatesNumber();
 
     const w = Math.floor( canvas.width / (num + 1) );
-    console.log(w);
     for(var i=1; i<=num; i++) {
         drawState(i*w, canvas.height / 2, 30, i-1);
     }
@@ -90,7 +89,7 @@ function transitionTable() {
     for (var i = 0; i<rows; i++) {
         table_body+='<tr>';
 
-        for ( var j = 0; j<col; j++){
+        for ( var j = 0; j<cols; j++){
             table_body += '<td>';
             table_body += '<input type="text" id="'+ i + j + '">';
             table_body += '</td>';
