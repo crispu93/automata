@@ -60,14 +60,16 @@ function drawAcceptState() {
 }
 
 $('#states').change( function() {
+    var canvas = $('#myCanvas')[0];
+    canvas.width = canvas.width;
     $('#logStates').text("El número de estados ha cambiado");
     afd.setStates( parseInt($(this).val() ) );
     const num = afd.getStatesNumber();
 
-    const w = Math.floor( document.getElementById("myCanvas").width / (num + 1) );
+    const w = Math.floor( canvas.width / (num + 1) );
     console.log(w);
     for(var i=1; i<=num; i++) {
-        drawState(i*w, document.getElementById("myCanvas").width / 2, 20);
+        drawState(i*w, canvas.height / 2, 20);
     }
 });
 
