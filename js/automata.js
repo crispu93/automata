@@ -37,6 +37,10 @@ class AFD {
     getStatesNumber() {
         return this.num_states;
     }
+
+    getSymbolsNumber() {
+        return this.symbols_size;
+    }
 }
 
 let afd = new AFD();
@@ -79,12 +83,32 @@ $('#states').change( function() {
     }
 });
 
+function transitionTable() {
+    let rows = afd.getStatesNumber();
+    let cols = afd.getSymbolsNumber();
+    let table_body = '<table border="1">';
+    for (var i = 0; i<rows; i++) {
+        table_body+='<tr>';
+
+        for ( var j = 0; j<col; j++){
+            table_body += '<td>';
+            table_body += '<input type="text" id="'+ i + j '">';
+            table_body += '</td>';
+        }
+
+        table_body += '</tr>';
+    }
+    table_body += '</table>';
+    $('#tableDiv').html(table_body);
+}
+
 $('#symbols').change( function() {
     $('#logSymb').text("El número de símbolos ha cambiado");
     // Save the symbols in an array
     let str = $(this).val();
     let res = str.split(" ");
-    console.log(res);
     afd.setSymbols( res );
 });
+
+
 
