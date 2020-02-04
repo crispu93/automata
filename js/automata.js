@@ -79,12 +79,12 @@ $('#states').change( function() {
     }
 });
 
-$('#symlbols').change( function() {
+$('#symbols').change( function() {
     $('#logSymb').text("El número de símbolos ha cambiado");
     // Save the symbols in an array
     let str = $(this).val();
     let res = str.split(" ");
     console.log(typeof(res));
-    afd.setSymbols(  );
+    afd.setSymbols( res );
 });
 
