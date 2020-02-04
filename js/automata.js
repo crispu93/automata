@@ -37,8 +37,8 @@ class AFD {
         return;
     }
     
-    getStates() {
-        return this.states;
+    getStatesNumber() {
+        return this.num_states;
     }
 }
 
@@ -62,4 +62,6 @@ function drawAcceptState() {
 $('#states').change( function() {
     $('#log').text("El número de estados ha cambiado");
     afd.setStates( parseInt($(this).val() ) );
+    console.log(afd.getStatesNumber());
 });
+
