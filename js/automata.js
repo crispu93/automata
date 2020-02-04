@@ -65,8 +65,9 @@ $('#states').change( function() {
     const num = afd.getStatesNumber();
 
     const w = Math.floor( $myCanvas.width / num + 1 );
+    console.log(w);
     for(var i=0; i<num; i++) {
-        drawState(i*w, $myCanvas.width / 2, 10)
+        drawState(i*w, $myCanvas.width / 2, 10);
     }
 });
 
