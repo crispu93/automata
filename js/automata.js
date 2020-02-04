@@ -46,12 +46,19 @@ var $myCanvas = $('#myCanvas');
 let afd = new AFD();
 
 
-function drawState(x_pos, y_pos, r){
+function drawState(x_pos, y_pos, r, i){
     $myCanvas.drawArc({
         strokeStyle: '#000',
         strokeWidth: 3,
         x: x_pos, y: y_pos,
         radius: r
+    }).drawText({
+        layer: true,
+        fillStyle: "#9cf",
+        strokeStyle: "#25a",
+        x: 90,
+        y: 100,
+        text: "q"+i
     });
 }
 
@@ -69,7 +76,7 @@ $('#states').change( function() {
     const w = Math.floor( canvas.width / (num + 1) );
     console.log(w);
     for(var i=1; i<=num; i++) {
-        drawState(i*w, canvas.height / 2, 20);
+        drawState(i*w, canvas.height / 2, 20, i-1);
     }
 });
 
