@@ -1,10 +1,10 @@
 class AFD {
     constructor(){
         this.num_states = null;
-        this.language_size = null;
+        this.symbols_size = null;
 
         this.states = [];
-        this.language = [];
+        this.symbols = [];
         this.initial_state = null;
         this.accept_states = [];
         this.transition = [];
@@ -17,9 +17,9 @@ class AFD {
         this.num_states = num_states;
     }
 
-    setLanguage(language) {
-        language.forEach(x => this.language.push(x));
-        this.language_size = language.length; 
+    setSymbols(symbols) {
+        symbols.forEach(x => this.symbols.push(x));
+        this.symbols_size = symbols.length; 
     }
 
     setInitialState(initial_state) {
