@@ -54,10 +54,10 @@ function drawState(x_pos, y_pos, r, i){
         radius: r
     }).drawText({
         layer: true,
-        fillStyle: "#9cf",
+        fillStyle: "#000",
         strokeStyle: "#25a",
-        x: 90,
-        y: 100,
+        x: x_pos,
+        y: y_pos,
         text: "q"+i
     });
 }
