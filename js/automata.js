@@ -42,24 +42,23 @@ class AFD {
     }
 }
 
-var $myCanvas = $('#myCanvas');
 let afd = new AFD();
 
 
 function drawState(x_pos, y_pos, r, i){
-    $myCanvas.drawArc({
+    $('#myCanvas').drawArc({
         strokeStyle: '#000',
         strokeWidth: 3,
         x: x_pos, y: y_pos,
         radius: r
-    });/*.drawText({
-        layer: true,
+    }).drawText({
+        layer: false,
         fillStyle: "#000",
         strokeStyle: "#25a",
         x: x_pos,
         y: y_pos,
         text: "q"+i
-    });*/
+    });
 }
 
 function drawAcceptState() {
