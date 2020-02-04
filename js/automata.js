@@ -92,7 +92,7 @@ function transitionTable() {
 
         for ( var j = 0; j<col; j++){
             table_body += '<td>';
-            table_body += '<input type="text" id="'+ i + j '">';
+            table_body += '<input type="text" id="'+ i + j + '">';
             table_body += '</td>';
         }
 
