@@ -67,8 +67,12 @@ function drawAcceptState() {
 }
 
 $('#states').change( function() {
-    var canvas = $('#myCanvas')[0];
-    canvas.width = canvas.width;
+    
+    const canvas = document.getElementById('myCanvas');
+    const context = canvas.getContext('2d');
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+
     $('#logStates').text("El número de estados ha cambiado");
     afd.setStates( parseInt($(this).val() ) );
     const num = afd.getStatesNumber();
@@ -76,7 +80,7 @@ $('#states').change( function() {
     const w = Math.floor( canvas.width / (num + 1) );
     console.log(w);
     for(var i=1; i<=num; i++) {
-        drawState(i*w, canvas.height / 2, 20, i-1);
+        drawState(i*w, canvas.height / 2, 30, i-1);
     }
 });
 
