@@ -85,7 +85,7 @@ $('#states').change( function() {
 function transitionTable() {
     let rows = afd.getStatesNumber();
     let cols = afd.getSymbolsNumber();
-    let table_body = '<table border="1">';
+    let table_body = '<table border="1" width="250">';
     for (var i = 0; i<rows; i++) {
         table_body+='<tr>';
 
